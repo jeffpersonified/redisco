@@ -1,3 +1,43 @@
-// Place all the styles related to the landing controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body, html {
+  background: #141413;
+  background: -moz-radial-gradient(center, circle cover, #141413 0%, #0A0A0A 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#141413), color-stop(100%,#0A0A0A)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, circle cover, #141413 0%,#0A0A0A 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, circle cover, #141413 0%,#0A0A0A 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, circle cover, #141413 0%,#0A0A0A 100%); /* IE10+ */
+  background: radial-gradient(circle at center, #141413 0%,#0A0A0A 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141413', endColorstr='#0A0A0A',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+img.logo {
+  width: 5em;
+  height: 5em;
+  @media only screen and (max-width: 768px) {
+    width: 4em;
+    height: 4em;
+  }
+}
+
+body {
+  background-image: image-url('disco_ball_and_chain.png');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  // media queried, including image
+  background-position: center -15%;
+  background-size: 25%;
+}
+
+#spiel {
+  margin-top: 40%;
+}

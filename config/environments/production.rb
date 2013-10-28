@@ -72,6 +72,9 @@ Redisco::Application.configure do
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
+  # Add the fonts path
+  config.assets.paths << "#{Rails.root}/assets/fonts"
+
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
 
