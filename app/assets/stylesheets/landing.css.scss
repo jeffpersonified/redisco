@@ -1,3 +1,8 @@
+@mixin addSomeCurve {
+  border-radius: $global-rounded;
+  height: 3em;
+}
+
 html {
   height: 100%;
 }
@@ -21,23 +26,79 @@ body, html {
 }
 
 img.logo {
-  width: 5em;
-  height: 5em;
+  margin: 2em auto;
+  width: 4.5em;
+  height: 4.5em;
+  position: fixed;
+  z-index: 1;
   @media only screen and (max-width: 768px) {
-    width: 4em;
-    height: 4em;
+    margin: 1em auto;
+    width: 3em;
+    height: 3em;
   }
 }
 
-body {
-  background-image: image-url('disco_ball_and_chain.png');
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  // media queried, including image
-  background-position: center -15%;
-  background-size: 25%;
+#spiel {
+  margin-top: 8em;
+  @media only screen and (max-width: 768px) {
+    margin-top: 4em;
+  }
 }
 
-#spiel {
-  margin-top: 40%;
+#pitch h3 {
+  line-height: 1.6em;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 2.5em auto 1.5em;
+  font-weight: 100;
+  color: $body-font-color;
+  font-size: 1.25em;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.05em;
+  }
+}
+
+#sign-up {
+  padding-left: 1.2em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  @include addSomeCurve;
+  @media only screen and (max-width: 768px) {
+    font-size: 0.9em;
+  }
+}
+
+#submit {
+  text-transform: uppercase;
+  font-size: 1em;
+  @include addSomeCurve;
+  @media only screen and (max-width: 768px) {
+    font-size: 0.9em;
+  }
+}
+
+#footer {
+  margin-top: 1.5em;
+  font-size: 2.4em;
+  text-align: center;
+}
+
+#instagram {
+  display: inline-block;
+}
+
+#facebook {
+  display: inline-block;
+  margin: 0 1.5em;
+}
+
+#soundcloud {
+  display: inline-block;
+}
+
+.space-below-that-seems-unnecessary {
+  margin-top: 3em;
+  position: relative;
+  height: 1em;
 }

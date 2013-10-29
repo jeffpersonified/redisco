@@ -91,7 +91,7 @@ $primary-color: #00C1F7;
 
 // Inset shadow shiny edges and depressions.
 
-// $shiny-edge-size: 0 1px 0;
+$shiny-edge-size: 0 0 0;
 // $shiny-edge-color: rgba(#fff, .5);
 // $shiny-edge-active-color: rgba(#000, .2);
 
@@ -150,7 +150,7 @@ $primary-color: #00C1F7;
 //
 
 // $row-width: em-calc(1000);
-// $column-gutter: em-calc(30);
+$column-gutter: em-calc(20);
 // $total-columns: 12;
 
 //
@@ -290,7 +290,7 @@ $header-font-color: $primary-color;
 
 // We use this to set the base for lots of form spacing and positioning styles
 
-// $form-spacing: em-calc(16);
+$form-spacing: em-calc(16);
 
 // We use these to style the labels in different ways
 
@@ -384,11 +384,12 @@ $header-font-color: $primary-color;
 
 // We use these to control button border styles.
 
-// $button-border-width: 1px;
+$button-border-width: 0px;
 // $button-border-style: solid;
 
 // We use this to set the default radius used throughout the core.
 
+// $button-radius: $global-radius;
 // $button-radius: $global-radius;
 // $button-round: $global-rounded;
 
