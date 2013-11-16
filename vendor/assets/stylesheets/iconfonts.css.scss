@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-[class*="icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -23,15 +23,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-social_soundcloud_circle:before {
+.icon-social_tumblr_circle:before {
   content: "\e600";
 }
-.icon-redisco:before {
+.icon-social_soundcloud_circle:before {
   content: "\e601";
 }
-.icon-social_facebook_circle:before {
+.icon-redisco:before {
   content: "\e602";
 }
-.icon-social_instagram_circle:before {
+.icon-social_facebook_circle:before {
   content: "\e603";
+}
+.icon-social_instagram_circle:before {
+  content: "\e604";
 }
